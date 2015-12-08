@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E77F02441C17854B006130C7 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77F02431C17854B006130C7 /* File.swift */; };
 		E7FE5BE41C17324800F33277 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FE5BE31C17324800F33277 /* AppDelegate.swift */; };
 		E7FE5BE61C17324800F33277 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FE5BE51C17324800F33277 /* ViewController.swift */; };
 		E7FE5BE91C17324800F33277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FE5BE71C17324800F33277 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E77F02431C17854B006130C7 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		E7FE5BE01C17324800F33277 /* WordPlayGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordPlayGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FE5BE31C17324800F33277 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7FE5BE51C17324800F33277 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		E7FE5BE21C17324800F33277 /* WordPlayGame */ = {
 			isa = PBXGroup;
 			children = (
+				E77F02431C17854B006130C7 /* File.swift */,
 				E7FE5BE31C17324800F33277 /* AppDelegate.swift */,
 				E7FE5BE51C17324800F33277 /* ViewController.swift */,
 				E7FE5C111C17390D00F33277 /* VerbViewController.swift */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7FE5BE61C17324800F33277 /* ViewController.swift in Sources */,
+				E77F02441C17854B006130C7 /* File.swift in Sources */,
 				E7FE5C121C17390D00F33277 /* VerbViewController.swift in Sources */,
 				E7FE5C141C17395000F33277 /* AdjectiveViewController.swift in Sources */,
 				E7FE5C161C17396B00F33277 /* SentenceViewController.swift in Sources */,
@@ -496,6 +500,7 @@
 				E7FE5C0A1C17324800F33277 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7FE5C0B1C17324800F33277 /* Build configuration list for PBXNativeTarget "WordPlayGameTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +509,7 @@
 				E7FE5C0D1C17324800F33277 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7FE5C0E1C17324800F33277 /* Build configuration list for PBXNativeTarget "WordPlayGameUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +518,7 @@
 				E7FE5C101C17324800F33277 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

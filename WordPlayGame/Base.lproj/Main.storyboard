@@ -17,15 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ll0-1b-k9J">
-                                <rect key="frame" x="200" y="285" width="200" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="095-Pr-8FW"/>
-                                    <constraint firstAttribute="width" constant="200" id="q77-NW-vwf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a Noun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sd0-pd-EDC">
                                 <rect key="frame" x="248" y="205" width="105" height="20"/>
                                 <constraints>
@@ -47,6 +38,15 @@
                                     <segue destination="Rlc-i5-cem" kind="show" id="Lj8-dn-LfT"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ll0-1b-k9J">
+                                <rect key="frame" x="200" y="285" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="095-Pr-8FW"/>
+                                    <constraint firstAttribute="width" constant="200" id="q77-NW-vwf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -59,6 +59,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="I5p-vc-R0p"/>
+                    <connections>
+                        <outlet property="nounTextField" destination="Ll0-1b-k9J" id="VkJ-qf-Atc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,6 +120,9 @@
                             <constraint firstItem="mMY-cV-HcJ" firstAttribute="top" secondItem="Nnl-kH-hng" secondAttribute="bottom" constant="60" id="j52-EG-lue"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="verbTextField" destination="mMY-cV-HcJ" id="W2H-Yd-i22"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IAx-dA-QY0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,6 +181,9 @@
                             <constraint firstItem="7F1-g3-qUs" firstAttribute="top" secondItem="849-cY-BO9" secondAttribute="bottom" constant="60" id="dTF-y9-fd2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="AdjectiveTextField" destination="7F1-g3-qUs" id="g0R-eN-jn6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wuw-Zm-qKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -201,6 +210,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="sentenceLabel" destination="qML-uI-N8I" id="QDN-wo-uG1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWd-7Y-k98" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
