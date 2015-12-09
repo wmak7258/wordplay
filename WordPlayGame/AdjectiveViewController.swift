@@ -14,7 +14,9 @@ class AdjectiveViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        let next3 = segue.destinationViewController as! SentenceViewController
+    }
 }

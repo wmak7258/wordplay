@@ -9,11 +9,22 @@
 import UIKit
 
 class VerbViewController: UIViewController {
-
     @IBOutlet weak var verbTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-
+    var wordplay2 = wordPlay()
+   
+    @IBAction func nextButton2(sender: AnyObject) {
+        let verbDisplay:String = verbTextField.text!
+        wordplay2.verb = verbDisplay
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        let next2 = segue.destinationViewController as! SentenceViewController
+        
+    }
 }

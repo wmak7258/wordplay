@@ -35,6 +35,7 @@
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
+                                    <action selector="nextButton1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JEh-J2-eQw"/>
                                     <segue destination="Rlc-i5-cem" kind="show" id="Lj8-dn-LfT"/>
                                 </connections>
                             </button>
@@ -87,6 +88,7 @@
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
+                                    <action selector="nextButton2:" destination="Rlc-i5-cem" eventType="touchUpInside" id="zi6-EL-nft"/>
                                     <segue destination="Tdb-Uh-o0F" kind="show" id="ddz-Tx-waC"/>
                                 </connections>
                             </button>

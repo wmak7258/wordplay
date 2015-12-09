@@ -16,8 +16,6 @@ class SentenceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
 
 
