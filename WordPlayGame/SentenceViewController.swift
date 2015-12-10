@@ -13,10 +13,10 @@ class SentenceViewController: UIViewController {
    
     @IBOutlet weak var sentenceLabel: UILabel!
     
-    var wordPlayFinal = wordPlay()
+    var wordPlayFinal = MadLib()
     override func viewDidLoad() {
         super.viewDidLoad()
-    sentenceLabel.text = "
+        sentenceLabel.text = " \(wordPlayFinal.noun) \(wordPlayFinal.verb) into BurgerKing to buy a \(wordPlayFinal.adjective) burger"
     
     }
 

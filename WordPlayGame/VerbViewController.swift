@@ -15,7 +15,7 @@ class VerbViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    var wordplay2 = wordPlay()
+    var wordplay2 = MadLib()
    
     @IBAction func nextButton2(sender: AnyObject) {
         let verbDisplay:String = verbTextField.text!
@@ -25,6 +25,6 @@ class VerbViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
         let next2 = segue.destinationViewController as! AdjectiveViewController
-        next2.wordplay3 = wordplay2
+        next2.wordPlay3 = wordplay2
     }
 }

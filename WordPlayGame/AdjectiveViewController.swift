@@ -15,7 +15,7 @@ class AdjectiveViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    var wordPlay3 = wordPlay()
+    var wordPlay3 = MadLib()
    
     @IBAction func nextButton3(sender: UIButton) {
         let adjectiveDisplay:String = AdjectiveTextField.text!
