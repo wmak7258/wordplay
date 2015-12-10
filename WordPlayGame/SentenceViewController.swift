@@ -13,10 +13,14 @@ class SentenceViewController: UIViewController {
    
     @IBOutlet weak var sentenceLabel: UILabel!
     
-    
+    var wordPlayFinal = wordPlay()
     override func viewDidLoad() {
         super.viewDidLoad()
+    sentenceLabel.text = "
+    
     }
 
+   
+    
 
 }

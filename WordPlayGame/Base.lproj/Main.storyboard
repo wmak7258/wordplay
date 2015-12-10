@@ -150,6 +150,7 @@
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
+                                    <action selector="nextButton3:" destination="Tdb-Uh-o0F" eventType="touchUpInside" id="A6t-x2-oZV"/>
                                     <segue destination="oCz-Tx-Ec3" kind="show" id="MBw-jl-4Y0"/>
                                 </connections>
                             </button>

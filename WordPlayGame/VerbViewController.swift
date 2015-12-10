@@ -24,7 +24,7 @@ class VerbViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
-        let next2 = segue.destinationViewController as! SentenceViewController
-        
+        let next2 = segue.destinationViewController as! AdjectiveViewController
+        next2.wordplay3 = wordplay2
     }
 }
