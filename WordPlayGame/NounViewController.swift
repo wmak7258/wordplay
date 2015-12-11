@@ -10,23 +10,31 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var nounTextField: UITextField!
+    @IBOutlet weak var button1: UIButton!
+    
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        let text = (nounTextField.text as NSString).stringByReplacingCharactersInRange(range, withString: String)
+        let text = (nounTextField.text! as NSString).stringByReplacingCharactersInRange(range, withString: string)
         if !text.isEmpty{
-            button.userInteractionEnabled = true
+            button1.userInteractionEnabled = true
         } else {
-            button.userInteractionEnabled = false
+            button1.userInteractionEnabled = false
         }
         return true
     }
-        
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        nounTextField.delegate = self
+        if ((nounTextField.text?.isEmpty) != nil){
+            button1.userInteractionEnabled = false
+        }
     }
     var wordplay1 = MadLib()
     
     @IBAction func nextButton1(sender: UIButton) {
+      
         let nounDisplay:String = nounTextField.text!
         wordplay1.noun = nounDisplay
         

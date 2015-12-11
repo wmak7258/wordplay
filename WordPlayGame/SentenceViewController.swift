@@ -17,10 +17,7 @@ class SentenceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         sentenceLabel.text = " \(wordPlayFinal.noun) \(wordPlayFinal.verb) into BurgerKing to buy a \(wordPlayFinal.adjective) burger"
-    
     }
-
-   
     
-
+    
 }

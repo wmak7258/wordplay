@@ -8,12 +8,27 @@
 
 import UIKit
 
-class VerbViewController: UIViewController {
+class VerbViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var verbTextField: UITextField!
+    @IBOutlet weak var button2: UIButton!
     
     
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        let text = (verbTextField.text! as NSString).stringByReplacingCharactersInRange(range, withString: string)
+        if !text.isEmpty{
+            button2.userInteractionEnabled = true
+        } else {
+            button2.userInteractionEnabled = false
+        }
+        return true
+    }
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
+        verbTextField.delegate = self
+        if ((verbTextField.text?.isEmpty) != nil){
+            button2.userInteractionEnabled = false
+        }
     }
     var wordplay2 = MadLib()
    

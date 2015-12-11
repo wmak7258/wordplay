@@ -20,5 +20,9 @@ class MadLib {
         self.adjective = "fast"
     }
     
-   
+    func getSentence(wordPlayFinal: SentenceViewController) -> String
+    {
+        return wordPlayFinal
+    }
+    
 }

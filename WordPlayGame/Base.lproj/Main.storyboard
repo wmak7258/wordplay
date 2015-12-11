@@ -61,6 +61,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="I5p-vc-R0p"/>
                     <connections>
+                        <outlet property="button1" destination="q7s-zz-c2m" id="zqU-D4-BvG"/>
                         <outlet property="nounTextField" destination="Ll0-1b-k9J" id="VkJ-qf-Atc"/>
                     </connections>
                 </viewController>
@@ -123,6 +124,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="button2" destination="UTm-4d-G4H" id="k9m-fj-1QV"/>
                         <outlet property="verbTextField" destination="mMY-cV-HcJ" id="W2H-Yd-i22"/>
                     </connections>
                 </viewController>
@@ -186,6 +188,7 @@
                     </view>
                     <connections>
                         <outlet property="AdjectiveTextField" destination="7F1-g3-qUs" id="g0R-eN-jn6"/>
+                        <outlet property="button3" destination="uHe-Oc-uw8" id="bsB-1f-fPd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wuw-Zm-qKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
